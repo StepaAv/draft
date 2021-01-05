@@ -16,7 +16,7 @@ let calculateAll = () => {
     let startPrice = +inputWeapon.value + (+inputScroll.value * 3);
     stepPrice = startPrice;
         out = `+3 - ${startPrice} KK <br>`;
-        if (toggleWarrior.checked || ToggleMage.cheked) {
+        if (toggleWarrior.checked || ToggleMage.checked) {
             for (let i = 4; i < 15; i++) {
                 stepPrice = (stepPrice + ((+inputScroll.value +  stepPrice) * (toggleWarrior.checked ? NORMAL_CHANCE : MAGE_CHANCE)));
                 stepPrice = Math.round(stepPrice);
