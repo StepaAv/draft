@@ -24,7 +24,7 @@ let calculateAll = () => {
             }
         } else {
             for (let i = 4; i < 15; i++) {
-                stepPrice = (stepPrice + ((+inputScroll.value +  stepPrice) * (ARMOR_CHANCE_ARR[i] / 100)));
+                stepPrice = (stepPrice + ((+inputScroll.value +  stepPrice) * ((100 - ARMOR_CHANCE_ARR[i]) / 100)));
                 stepPrice = Math.round(stepPrice);
                 out += `+${i} -   ${stepPrice} KK <br>`
             }
