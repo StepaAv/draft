@@ -1,8 +1,8 @@
 let inputWeapon = document.querySelector('.i-1');
 let inputScroll = document.querySelector('.i-2');
 let toggleWarrior = document.querySelector('.toggle-warrior');
-let ToggleMage = document.querySelector('.toggle-mage');
-let ToggleArmor = document.querySelector('.toggle-armor');
+let toggleMage = document.querySelector('.toggle-mage');
+let toggleArmor = document.querySelector('.toggle-armor');
 let output = document.querySelector('.result');
 const MAGE_CHANCE = 0.6;
 const NORMAL_CHANCE = 0.3;
@@ -40,5 +40,5 @@ let calculateAll = () => {
 inputWeapon.addEventListener('input', calculateAll);
 inputScroll.addEventListener('input', calculateAll);
 toggleWarrior.addEventListener('input', calculateAll);
-ToggleMage.addEventListener('input', calculateAll);
-ToggleArmor.addEventListener('input', calculateAll);
+toggleMage.addEventListener('input', calculateAll);
+toggleArmor.addEventListener('input', calculateAll);
